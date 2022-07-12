@@ -4,13 +4,15 @@ export interface SelectProps {
   optionLabels: string[];
 }
 
-const Select = (props: SelectProps) => {
+const Select = ({ optionLabels }: SelectProps) => {
   return (
-    <select>
-      {props.optionLabels && props.optionLabels.map((opt) => (
-        <option value={opt}>{opt}</option>
-      ))}
-    </select>
+    <div>
+      <label htmlFor="login">Choose a login</label>
+      <select name="login" id="login">
+        {optionLabels &&
+          optionLabels.map((opt) => <option value={opt}>{opt}</option>)}
+      </select>
+    </div>
   );
 };
 
