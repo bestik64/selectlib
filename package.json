@@ -1,5 +1,5 @@
 {
-  "name": "select-lib",
+  "name": "@bestik64/selectlib",
   "version": "0.0.1",
   "description": "Simple select library",
   "scripts": {
@@ -26,5 +26,8 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "tslib": "^2.4.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/bestik64"
   }
 }
